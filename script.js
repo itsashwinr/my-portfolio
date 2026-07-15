@@ -338,19 +338,21 @@ document.addEventListener("DOMContentLoaded", () => {
        COPY EMAIL BUTTON
     ========================== */
 
-    const copyBtn = document.querySelector(".copy-btn");
+    const copyBtn = document.getElementById("emailCopyBtn");
 
     if (copyBtn) {
+        const tooltip = copyBtn.querySelector(".contact-tooltip");
+        const originalTooltipText = tooltip ? tooltip.textContent : "Copy Email";
+
         copyBtn.addEventListener("click", async () => {
             const email = copyBtn.dataset.copy;
             try {
                 await navigator.clipboard.writeText(email);
-                const original = copyBtn.innerHTML;
-                copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied';
                 copyBtn.classList.add("copied");
+                if (tooltip) tooltip.textContent = "Copied!";
                 setTimeout(() => {
-                    copyBtn.innerHTML = original;
                     copyBtn.classList.remove("copied");
+                    if (tooltip) tooltip.textContent = originalTooltipText;
                 }, 1800);
             } catch (err) {
                 console.error("Clipboard copy failed:", err);

@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet"
@@ -437,45 +437,57 @@
 
         <div class="certification-grid">
             <div class="certificate">
-                <i class="fa-solid fa-database"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/15Hi3KDHrucVlxI1hKHtRS8ecDPWlTAPq/view" target="_blank" rel="noopener" aria-label="View SQL Certification certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
                 <h3>SQL Certification</h3>
                 <p>Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/15Hi3KDHrucVlxI1hKHtRS8ecDPWlTAPq/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="certificate">
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/186fWR7zKTltu64UZoLBMkx5FwvDRyG27/view" target="_blank" rel="noopener" aria-label="View Exploratory Data Analysis certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
                 <h3>Exploratory Data Analysis</h3>
                 <p>Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/186fWR7zKTltu64UZoLBMkx5FwvDRyG27/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="certificate">
-                <i class="fa-brands fa-python"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/1uo_25xfAS-dyFqBg6nSPaCC-kz1GhhAc/view" target="_blank" rel="noopener" aria-label="View Python Libraries certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
                 <h3>Python Libraries</h3>
                 <p>pandas, NumPy, Visualization — Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/1uo_25xfAS-dyFqBg6nSPaCC-kz1GhhAc/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="certificate">
-                <i class="fa-solid fa-brain"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/1aTrgHBFjXvq_lHX7pRBG7OuoELbzn2qR/view" target="_blank" rel="noopener" aria-label="View Supervised Learning certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
                 <h3>Supervised Learning</h3>
                 <p>Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/1aTrgHBFjXvq_lHX7pRBG7OuoELbzn2qR/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="certificate">
-                <i class="fa-solid fa-diagram-project"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/1hl3ZlZbA4C71MxRG4jefMApg_VmriRRg/view" target="_blank" rel="noopener" aria-label="View Unsupervised Learning certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-solid fa-diagram-project"></i></div>
                 <h3>Unsupervised Learning</h3>
                 <p>Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/1hl3ZlZbA4C71MxRG4jefMApg_VmriRRg/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="certificate">
-                <i class="fa-solid fa-gears"></i>
+                <a class="cert-view" href="https://drive.google.com/file/d/1U1UxTEnzK38jggTwZbvdhg-S4rEy-rkm/view" target="_blank" rel="noopener" aria-label="View MLOps certificate">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <div class="cert-icon"><i class="fa-solid fa-gears"></i></div>
                 <h3>MLOps</h3>
                 <p>Scaler Academy</p>
-                <a class="cert-link" href="https://drive.google.com/file/d/1U1UxTEnzK38jggTwZbvdhg-S4rEy-rkm/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
     </section>
@@ -490,27 +502,23 @@
             <h2>Let's Build Something Together</h2>
         </div>
 
-        <div class="contact-wrapper">
-            <div class="contact-card">
+        <p class="contact-lead">Reach out through whichever channel works best for you.</p>
+
+        <div class="contact-icons">
+            <button type="button" class="contact-icon-btn" id="emailCopyBtn" data-copy="ashwin2000achu@gmail.com" aria-label="Copy email address">
                 <i class="fa-solid fa-envelope"></i>
-                <h3>Email</h3>
-                <a href="mailto:ashwin2000achu@gmail.com">ashwin2000achu@gmail.com</a>
-                <button class="copy-btn" data-copy="ashwin2000achu@gmail.com">
-                    <i class="fa-regular fa-copy"></i> Copy
-                </button>
-            </div>
+                <span class="contact-tooltip">Copy Email</span>
+            </button>
 
-            <div class="contact-card">
+            <a href="https://linkedin.com/in/ashwinr14" target="_blank" rel="noopener" class="contact-icon-btn" aria-label="Open LinkedIn profile">
                 <i class="fab fa-linkedin"></i>
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/ashwinr14" target="_blank" rel="noopener">linkedin.com/in/ashwinr14</a>
-            </div>
+                <span class="contact-tooltip">LinkedIn</span>
+            </a>
 
-            <div class="contact-card">
+            <a href="https://github.com/itsashwinr" target="_blank" rel="noopener" class="contact-icon-btn" aria-label="Open GitHub profile">
                 <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-                <a href="https://github.com/itsashwinr" target="_blank" rel="noopener">github.com/itsashwinr</a>
-            </div>
+                <span class="contact-tooltip">GitHub</span>
+            </a>
         </div>
 
         <div class="contact-buttons">
