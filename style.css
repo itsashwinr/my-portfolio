@@ -5,16 +5,16 @@
 
 :root{
 
-    --primary:#DFB6B2;
-    --secondary:#854F6C;
-    --cyan:#522B5B;
+    --primary:#8B5CF6;
+    --secondary:#4C6FFF;
+    --cyan:#38BDF8;
 
-    --primary-rgb:223,182,178;
-    --secondary-rgb:133,79,108;
-    --cyan-rgb:82,43,91;
+    --primary-rgb:139,92,246;
+    --secondary-rgb:76,111,255;
+    --cyan-rgb:56,189,248;
 
-    --bg:#190019;
-    --bg2:#2B124C;
+    --bg:#05050a;
+    --bg2:#0d0d16;
 
     --card:rgba(255,255,255,.05);
     --card2:rgba(255,255,255,.07);
@@ -22,45 +22,49 @@
     --border:rgba(255,255,255,.10);
     --border-strong:rgba(255,255,255,.16);
 
-    --white:#FBE4D8;
+    --white:#F1F0FF;
 
-    --text:#c9aab3;
+    --text:rgba(199,201,217,.75);
 
-    --shadow:0 10px 40px rgba(0,0,0,.35);
+    --btn-text:#ffffff;
+
+    --shadow:0 10px 40px rgba(0,0,0,.5);
 
     --radius:22px;
 
     --transition:.35s ease;
 
-    --font-body:'Chivo',sans-serif;
-    --font-heading:'Playfair Display',serif;
+    --font-body:'Inter',sans-serif;
+    --font-heading:'Cinzel',serif;
 
 }
 
 body.light-mode{
 
-    --primary:#854F6C;
-    --secondary:#522B5B;
-    --cyan:#2B124C;
+    --primary:#5B21B6;
+    --secondary:#2563EB;
+    --cyan:#0284C7;
 
-    --primary-rgb:133,79,108;
-    --secondary-rgb:82,43,91;
-    --cyan-rgb:43,18,76;
+    --primary-rgb:91,33,182;
+    --secondary-rgb:37,99,235;
+    --cyan-rgb:2,132,199;
 
-    --bg:#FBE4D8;
-    --bg2:#DFB6B2;
+    --bg:#F0EEFF;
+    --bg2:#E4E0FA;
 
-    --card:rgba(25,0,25,.045);
-    --card2:rgba(25,0,25,.07);
+    --card:rgba(20,16,31,.045);
+    --card2:rgba(20,16,31,.07);
 
-    --border:rgba(25,0,25,.12);
-    --border-strong:rgba(25,0,25,.18);
+    --border:rgba(20,16,31,.12);
+    --border-strong:rgba(20,16,31,.18);
 
-    --white:#190019;
+    --white:#14101f;
 
-    --text:#5b3a44;
+    --text:rgba(43,43,61,.72);
 
-    --shadow:0 10px 30px rgba(25,0,25,.14);
+    --btn-text:#ffffff;
+
+    --shadow:0 10px 30px rgba(20,16,31,.14);
 
 }
 
@@ -82,7 +86,7 @@ body{
 
     font-family:var(--font-body);
 
-    font-weight:300;
+    font-weight:400;
 
     background:var(--bg);
 
@@ -98,9 +102,11 @@ h1,h2,h3,h4,h5,h6{
 
     font-family:var(--font-heading);
 
-    font-weight:700;
+    font-weight:600;
 
-    font-style:italic;
+    font-style:normal;
+
+    letter-spacing:.5px;
 
 }
 
@@ -716,6 +722,8 @@ BUTTONS
     text-decoration:none;
 
     color:var(--white);
+
+    font-weight:600;
 
     border:1px solid var(--border);
 
