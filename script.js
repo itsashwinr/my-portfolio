@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ========================== */
 
     const typing = document.getElementById("typing");
-    const words = ["Data Analyst", "Business Analyst", "MIS Analyst", "SQL Developer", "Python Enthusiast"];
+    const words = ["Data Analyst", "Business Analyst", "MIS Analyst", "Data Storyteller", "Python Enthusiast"];
     let wordIndex = 0;
     let charIndex = 0;
     let deleting = false;
@@ -358,28 +358,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Clipboard copy failed:", err);
             }
         });
-    }
-
-    /* ==========================
-       FLOATING PARTICLES (skipped for reduced motion)
-    ========================== */
-
-    const particleContainer = document.getElementById("particles");
-
-    if (particleContainer && !reduceMotion) {
-        for (let i = 0; i < 70; i++) {
-            const particle = document.createElement("span");
-            particle.style.position = "absolute";
-            particle.style.width = Math.random() * 5 + 2 + "px";
-            particle.style.height = particle.style.width;
-            particle.style.borderRadius = "50%";
-            particle.style.background = "rgba(255,255,255,.25)";
-            particle.style.left = Math.random() * 100 + "%";
-            particle.style.top = Math.random() * 100 + "%";
-            particle.style.animation = `particle ${Math.random() * 15 + 10}s linear infinite`;
-            particle.style.animationDelay = Math.random() * 8 + "s";
-            particleContainer.appendChild(particle);
-        }
     }
 
     /* ==========================

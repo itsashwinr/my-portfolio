@@ -5,16 +5,16 @@
 
 :root{
 
-    --primary:#8B5CF6;
-    --secondary:#4C6FFF;
-    --cyan:#38BDF8;
+    --primary:#FFEDAC;
+    --secondary:#E8B84B;
+    --cyan:#D98E5B;
 
-    --primary-rgb:139,92,246;
-    --secondary-rgb:76,111,255;
-    --cyan-rgb:56,189,248;
+    --primary-rgb:255,237,172;
+    --secondary-rgb:232,184,75;
+    --cyan-rgb:217,142,91;
 
-    --bg:#05050a;
-    --bg2:#0d0d16;
+    --bg:#3E2723;
+    --bg2:#4E332B;
 
     --card:rgba(255,255,255,.05);
     --card2:rgba(255,255,255,.07);
@@ -22,11 +22,11 @@
     --border:rgba(255,255,255,.10);
     --border-strong:rgba(255,255,255,.16);
 
-    --white:#F1F0FF;
+    --white:#FFF3D6;
 
-    --text:rgba(199,201,217,.75);
+    --text:rgba(255,237,172,.68);
 
-    --btn-text:#ffffff;
+    --btn-text:#3E2723;
 
     --shadow:0 10px 40px rgba(0,0,0,.5);
 
@@ -34,37 +34,37 @@
 
     --transition:.35s ease;
 
-    --font-body:'Inter',sans-serif;
-    --font-heading:'Cinzel',serif;
+    --font-body:'Switzer',sans-serif;
+    --font-heading:'Switzer',sans-serif;
 
 }
 
 body.light-mode{
 
-    --primary:#5B21B6;
-    --secondary:#2563EB;
-    --cyan:#0284C7;
+    --primary:#082052;
+    --secondary:#1B3B7A;
+    --cyan:#C9A227;
 
-    --primary-rgb:91,33,182;
-    --secondary-rgb:37,99,235;
-    --cyan-rgb:2,132,199;
+    --primary-rgb:8,32,82;
+    --secondary-rgb:27,59,122;
+    --cyan-rgb:201,162,39;
 
-    --bg:#F0EEFF;
-    --bg2:#E4E0FA;
+    --bg:#F8F0E5;
+    --bg2:#EFE3D0;
 
-    --card:rgba(20,16,31,.045);
-    --card2:rgba(20,16,31,.07);
+    --card:rgba(8,32,82,.045);
+    --card2:rgba(8,32,82,.07);
 
-    --border:rgba(20,16,31,.12);
-    --border-strong:rgba(20,16,31,.18);
+    --border:rgba(8,32,82,.12);
+    --border-strong:rgba(8,32,82,.18);
 
-    --white:#14101f;
+    --white:#082052;
 
-    --text:rgba(43,43,61,.72);
+    --text:rgba(8,32,82,.68);
 
-    --btn-text:#ffffff;
+    --btn-text:#F8F0E5;
 
-    --shadow:0 10px 30px rgba(20,16,31,.14);
+    --shadow:0 10px 30px rgba(8,32,82,.14);
 
 }
 
@@ -102,11 +102,11 @@ h1,h2,h3,h4,h5,h6{
 
     font-family:var(--font-heading);
 
-    font-weight:600;
+    font-weight:700;
 
     font-style:normal;
 
-    letter-spacing:.5px;
+    letter-spacing:-.5px;
 
 }
 
@@ -175,24 +175,6 @@ background-position:left;
 background-position:right;
 
 }
-
-}
-
-/* ===========================
-PARTICLES
-=========================== */
-
-#particles{
-
-position:fixed;
-
-inset:0;
-
-z-index:-1;
-
-overflow:hidden;
-
-pointer-events:none;
 
 }
 
@@ -831,6 +813,8 @@ PROFILE
     height:320px;
 
     object-fit:cover;
+
+    object-position:center 15%;
 
     border-radius:50%;
 
@@ -2298,10 +2282,6 @@ disable ambient/decorative animation, keep core UI transitions.
     .project-card:nth-child(odd),
     .project-card:nth-child(even){
         animation:none;
-    }
-
-    #particles{
-        display:none;
     }
 }
 
