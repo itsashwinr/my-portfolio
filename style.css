@@ -44,6 +44,8 @@
 
     --profile-radius:50% 50% 12% 12%;
 
+    --nav-text:var(--text);
+
 }
 
 body.light-mode{
@@ -82,6 +84,8 @@ body.light-mode{
     --heading-spacing:-.5px;
 
     --profile-radius:50%;
+
+    --nav-text:rgba(8,32,82,.5);
 
 }
 
@@ -322,38 +326,6 @@ z-index:999;
 }
 
 /* ===========================
-CURSOR GLOW
-=========================== */
-
-.cursor-glow{
-
-position:fixed;
-
-width:450px;
-
-height:450px;
-
-border-radius:50%;
-
-background:
-
-radial-gradient(
-
-rgba(var(--primary-rgb),.18),
-
-transparent 70%);
-
-pointer-events:none;
-
-transform:translate(-50%,-50%);
-
-z-index:-1;
-
-filter:blur(25px);
-
-}
-
-/* ===========================
 NAVBAR
 =========================== */
 
@@ -421,7 +393,7 @@ list-style:none;
 
 .nav-links a{
 
-color:var(--text);
+color:var(--nav-text);
 
 text-decoration:none;
 

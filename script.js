@@ -129,21 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
     progressBars.forEach(bar => progressObserver.observe(bar));
 
     /* ==========================
-       CURSOR GLOW
-    ========================== */
-
-    const glow = document.querySelector(".cursor-glow");
-
-    if (glow && !reduceMotion && matchMedia("(hover: hover)").matches) {
-        document.addEventListener("mousemove", e => {
-            glow.style.left = e.clientX + "px";
-            glow.style.top = e.clientY + "px";
-        });
-    } else if (glow) {
-        glow.style.display = "none";
-    }
-
-    /* ==========================
        SCROLL REVEAL
     ========================== */
 
